@@ -216,4 +216,4 @@ var configurationMgr = configurationManagers.getConfigurationManager({id:"some_i
 configurationMgr.some_property = new_value
 configurationMgr.update[propeties,...]
 ```
-*Note** More details can be found in /scripts/cradlepoint/test/tests
+**Note** More examples can be found in /scripts/cradlepoint/test/tests
