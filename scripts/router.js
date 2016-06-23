@@ -67,8 +67,8 @@ Router.prototype.update = function(){
  * @param {Object} [dto.paging] (optional)
  * @param {Number} [dto.paging.offset] index to start the list of results at
  * @param {Number} [dto.paging.limit] max number of records to return
- * @param {Number} [dto.paging.next] url of next result set. If defined, overrides all other parameters
- * @param {Number} [dto.paging.previous] url of previous result set. If defined, overrides all other parameters
+ * @param {String} [dto.paging.next] url of next result set. If defined, overrides all other parameters
+ * @param {String} [dto.paging.previous] url of previous result set. If defined, overrides all other parameters
  * @return {Object}
  * @throws Error
  */
@@ -98,8 +98,8 @@ Router.prototype.listStreamUsageSamples = function(dto) {
  * @param {Object} [dto.paging] (optional)
  * @param {Number} [dto.paging.offset] index to start the list of results at
  * @param {Number} [dto.paging.limit] max number of records to return
- * @param {Number} [dto.paging.next] url of next result set. If defined, overrides all other parameters
- * @param {Number} [dto.paging.previous] url of previous result set. If defined, overrides all other parameters
+ * @param {String} [dto.paging.next] url of next result set. If defined, overrides all other parameters
+ * @param {String} [dto.paging.previous] url of previous result set. If defined, overrides all other parameters
  * @return {Object} list of samples
  * @throws Error
  */
@@ -129,8 +129,8 @@ Router.prototype.listStateSamples = function(dto) {
  * @param {Object} [dto.paging] (optional)
  * @param {Number} [dto.paging.offset] index to start the list of results at
  * @param {Number} [dto.paging.limit] max number of records to return
- * @param {Number} [dto.paging.next] url of next result set. If defined, overrides all other parameters
- * @param {Number} [dto.paging.previous] url of previous result set. If defined, overrides all other parameters
+ * @param {String} [dto.paging.next] url of next result set. If defined, overrides all other parameters
+ * @param {String} [dto.paging.previous] url of previous result set. If defined, overrides all other parameters
  * @return {Object} list of samples
  * @throws Error
  */
