@@ -49,8 +49,8 @@ NetDeviceManager.prototype.construtor = NetDeviceManager;
  * @param {Object} [dto.paging] (optional)
  * @param {Number} [dto.paging.offset] index to start the list of results at
  * @param {Number} [dto.paging.limit] max number of records to return
- * @param {Number} [dto.paging.next] url of next result set. If defined, overrides all other parameters
- * @param {Number} [dto.paging.previous] url of previous result set. If defined, overrides all other parameters
+ * @param {String} [dto.paging.next] url of next result set. If defined, overrides all other parameters
+ * @param {String} [dto.paging.previous] url of previous result set. If defined, overrides all other parameters
 * @return {Object} {
  * { 
  *   "data": [Array of /netdevice.NetDevice objects]
@@ -96,8 +96,8 @@ NetDeviceManager.prototype.getNetDevice = function(dto) {
  * @param {Object} [dto.paging] (optional)
  * @param {Number} [dto.paging.offset] index to start the list of results at
  * @param {Number} [dto.paging.limit] max number of records to return
- * @param {Number} [dto.paging.next] url of next result set. If defined, overrides all other parameters
- * @param {Number} [dto.paging.previous] url of previous result set. If defined, overrides all other parameters
+ * @param {String} [dto.paging.next] url of next result set. If defined, overrides all other parameters
+ * @param {String} [dto.paging.previous] url of previous result set. If defined, overrides all other parameters
  * @return {Object} {
  * { 
  *   "data": [Array of samples]
@@ -133,8 +133,8 @@ NetDeviceManager.prototype.listNetDeviceUsageSamples = function(dto) {
  * @param {Object} [dto.paging] (optional)
  * @param {Number} [dto.paging.offset] index to start the list of results at
  * @param {Number} [dto.paging.limit] max number of records to return
- * @param {Number} [dto.paging.next] url of next result set. If defined, overrides all other parameters
- * @param {Number} [dto.paging.previous] url of previous result set. If defined, overrides all other parameters
+ * @param {String} [dto.paging.next] url of next result set. If defined, overrides all other parameters
+ * @param {String} [dto.paging.previous] url of previous result set. If defined, overrides all other parameters
  * @return {Object} {
  * { 
  *   "data": [Array of samples]
@@ -161,8 +161,8 @@ NetDeviceManager.prototype.listNetDeviceSignalSamples = function(dto) {
  * @param {Object} [dto.paging] (optional)
  * @param {Number} [dto.paging.offset] index to start the list of results at
  * @param {Number} [dto.paging.limit] max number of records to return
- * @param {Number} [dto.paging.next] url of next result set. If defined, overrides all other parameters
- * @param {Number} [dto.paging.previous] url of previous result set. If defined, overrides all other parameters
+ * @param {String} [dto.paging.next] url of next result set. If defined, overrides all other parameters
+ * @param {String} [dto.paging.previous] url of previous result set. If defined, overrides all other parameters
  * @return {Object} {
  * { 
  *   "data": [Array of device metrics]

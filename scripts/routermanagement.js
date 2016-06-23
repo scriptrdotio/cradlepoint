@@ -52,8 +52,8 @@ RouterManager.prototype.construtor = RouterManager;
  * @param {Object} [dto.paging] (optional)
  * @param {Number} [dto.paging.offset] index to start the list of results at
  * @param {Number} [dto.paging.limit] max number of records to return
- * @param {Number} [dto.paging.next] url of next result set. If defined, overrides all other parameters
- * @param {Number} [dto.paging.previous] url of previous result set. If defined, overrides all other parameters
+ * @param {String} [dto.paging.next] url of next result set. If defined, overrides all other parameters
+ * @param {String} [dto.paging.previous] url of previous result set. If defined, overrides all other parameters
  * @return {Object} {
  * { 
  *   "data": [Array of /router.Router objects]
@@ -100,8 +100,8 @@ RouterManager.prototype.getRouter = function(dto) {
  * @param {Object} [dto.paging] (optional)
  * @param {Number} [dto.paging.offset] index to start the list of results at
  * @param {Number} [dto.paging.limit] max number of records to return
- * @param {Number} [dto.paging.next] url of next result set. If defined, overrides all other parameters
- * @param {Number} [dto.paging.previous] url of previous result set. If defined, overrides all other parameters
+ * @param {String} [dto.paging.next] url of next result set. If defined, overrides all other parameters
+ * @param {String} [dto.paging.previous] url of previous result set. If defined, overrides all other parameters
  * @return {Object} {
  * { 
  *   "data": [Array of samples]
@@ -138,8 +138,8 @@ RouterManager.prototype.listRouterStreamUsageSamples = function(dto) {
  * @param {Object} [dto.paging] (optional)
  * @param {Number} [dto.paging.offset] index to start the list of results at
  * @param {Number} [dto.paging.limit] max number of records to return
- * @param {Number} [dto.paging.next] url of next result set. If defined, overrides all other parameters
- * @param {Number} [dto.paging.previous] url of previous result set. If defined, overrides all other parameters
+ * @param {String} [dto.paging.next] url of next result set. If defined, overrides all other parameters
+ * @param {String} [dto.paging.previous] url of previous result set. If defined, overrides all other parameters
  * @return {Object} {
  * { 
  *   "data": [Array of samples]
@@ -174,8 +174,8 @@ RouterManager.prototype.listRouterStateSamples = function(dto) {
  * @param {Object} [dto.paging] (optional)
  * @param {Number} [dto.paging.offset] index to start the list of results at
  * @param {Number} [dto.paging.limit] max number of records to return
- * @param {Number} [dto.paging.next] url of next result set. If defined, overrides all other parameters
- * @param {Number} [dto.paging.previous] url of previous result set. If defined, overrides all other parameters
+ * @param {String} [dto.paging.next] url of next result set. If defined, overrides all other parameters
+ * @param {String} [dto.paging.previous] url of previous result set. If defined, overrides all other parameters
  * @return {Object} {
  * { 
  *   "data": [Array of alerts]
