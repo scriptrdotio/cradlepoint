@@ -20,6 +20,7 @@ function Principal(dto) {
   dto = dto ? dto : {};
   this.ecmId = dto.ecmId;
   this.ecmKey = dto.ecmKey;
+  this.app = dto.app ? dto.app : config.defaultApp;
   if (!this.ecmId || !this.ecmKey) {
     
     this.role = dto.role ? dto.role : config.appConfig[this.app].defaultRole;
@@ -27,7 +28,6 @@ function Principal(dto) {
     this.ecmKey = config.appConfig[this.app].credentials[this.role].ecmKey;
   }
   
-  this.app = dto.app ? dto.app : config.defaultApp;
   this.appId = dto.appId ? dto.appId : config.appConfig[this.app].appId;
   this.appKey = dto.appKey ? dto.appKey : config.appConfig[this.app].appKey;
   
