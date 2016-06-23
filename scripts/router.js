@@ -176,6 +176,8 @@ Router.prototype.listLogs = function(dto) {
  * Return a list of NetDevice instances that are related to the current router
  * @method listNetDevices
  * @param {Obejct} [dto]
+ * @param {Number} [dto.paging.offset] index to start the list of results at
+ * @param {Number} [dto.paging.limit] max number of records to return
  * @param {String} [dto.paging.next] url of next result set. If defined, overrides all other parameters
  * @param {String} [dto.paging.previous] url of previous result set. If defined, overrides all other parameters
  * @return {Array} list of NetDevice instances
