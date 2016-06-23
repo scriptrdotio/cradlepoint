@@ -22,13 +22,14 @@ function Principal(dto) {
   this.ecmKey = dto.ecmKey;
   if (!this.ecmId || !this.ecmKey) {
     
-    this.app = dto.app ? dto.app : config.defaultApp;
     this.role = dto.role ? dto.role : config.appConfig[this.app].defaultRole;
     this.ecmId =  config.appConfig[this.app].credentials[this.role].ecmId;
     this.ecmKey = config.appConfig[this.app].credentials[this.role].ecmKey;
-    this.appId = config.appConfig[this.app].appId;
-    this.appKey = config.appConfig[this.app].appKey;
   }
+  
+  this.app = dto.app ? dto.app : config.defaultApp;
+  this.appId = dto.appId ? dto.appId : config.appConfig[this.app].appId;
+  this.appKey = dto.appKey ? dto.appKey : config.appConfig[this.app].appKey;
   
   if (!this.ecmId || !this.ecmKey) {
     
