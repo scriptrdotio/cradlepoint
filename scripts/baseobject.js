@@ -49,4 +49,17 @@ BaseObject.prototype._cloneData = function(){
   }
   
   return dataCopy;  
-};			
+};
+
+BaseObject.prototype._copyData = function(source, target){
+  
+  target = target ? target : {};
+  if (source && target) {
+    
+    for (var prop in source) {      
+      target[prop] = source[prop];  
+    }  	
+  }
+  
+  return target;
+};

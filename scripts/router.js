@@ -1,6 +1,10 @@
+/** Script ACLs do not delete 
+ read=nobody 
+write=nobody
+execute=authenticated 
+  **/ 
 var baseobjectModule = require("./baseobject");
 var objectManagement = require("./objectmanagement");
-var netDeviceModule = require("./netdevicemanagement");
 
 /**
  * Wraps router data and methods
@@ -75,6 +79,7 @@ Router.prototype.update = function(){
 Router.prototype.listStreamUsageSamples = function(dto) {
   
   var params = {filter: {router: this.id}};
+  params = this._copyData(dto, params);
   return objectManagement.sListObjects(params, "/router_stream_usage_samples/", this.client, this.constructor);
 };
 
@@ -106,6 +111,7 @@ Router.prototype.listStreamUsageSamples = function(dto) {
 Router.prototype.listStateSamples = function(dto) {
   
   var params = {filter: {router: this.id}};
+  params = this._copyData(dto, params);
   return objectManagement.sListObjects(params, "/router_state_samples/", this.client, this.constructor);
 };
 
@@ -137,6 +143,7 @@ Router.prototype.listStateSamples = function(dto) {
 Router.prototype.listAlerts = function(dto) {
   
   var params = {filter: {router: this.id}};
+  params = this._copyData(dto, params);
   return objectManagement.sListObjects(params, "/router_alerts/", this.client, this.constructor);
 };
 
@@ -169,6 +176,7 @@ Router.prototype.listAlerts = function(dto) {
 Router.prototype.listLogs = function(dto) {
   
   var params = {filter: {router: this.id}};
+  params = this._copyData(dto, params);
   return objectManagement.sListObjects(params, "/router_logs/", this.client, this.constructor);
 };
 

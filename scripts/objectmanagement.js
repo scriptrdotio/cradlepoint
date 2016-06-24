@@ -3,7 +3,8 @@
 write=nobody
 execute=authenticated 
   **/ 
- var clientModule = require("./client");
+
+var clientModule = require("./client");
 var util = require("./util");
 
 /**
@@ -110,14 +111,22 @@ function sListObjects(dto, path, client, managedType) {
     url: url,
     method: "GET"
   };
-  
+    
   if (dto.filter){
     requestParams.params = dto.filter;
   }
   
+  if (dto.paging && dto.paging.offset) {
+    requestParams.params.offset = dto.paging.offset;
+  }
+  
+  if (dto.paging && dto.paging.limit) {
+    requestParams.params.limit = dto.paging.limit;
+  }
+  console.log(JSON.stringify(requestParams));
   var response = client.callApi(requestParams);
   response.data = util.jsonListToClassInstanceList(response.data, managedType, client);
   response.paging = response.meta;
   delete response.meta;
   return response;
-};			
+};

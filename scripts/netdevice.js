@@ -3,7 +3,8 @@
 write=nobody
 execute=authenticated 
   **/ 
- var baseobjectModule = require("./baseobject");
+ 
+var baseobjectModule = require("./baseobject");
 var objectManagement = require("./objectmanagement");
 
 /**
@@ -57,6 +58,7 @@ NetDevice.prototype.constructor = NetDevice;
 NetDevice.prototype.listUsageSamples = function(dto) {
  
   var params = {filter: {net_device: this.id}};
+  params = this._copyData(dto, params);
   return objectManagement.sListObjects(params, "/net_device_usage_samples/", this.client, this.constructor);
 };
 
@@ -87,6 +89,7 @@ NetDevice.prototype.listUsageSamples = function(dto) {
 NetDevice.prototype.listSignalSamples = function(dto) {
   
   var params = {filter: {net_device: this.id}};
+  params = this._copyData(dto, params);
   return objectManagement.sListObjects(params, "/net_device_signal_samples/", this.client, this.constructor);
 };
 
@@ -109,5 +112,6 @@ NetDevice.prototype.listSignalSamples = function(dto) {
 NetDevice.prototype.listMetrics = function(dto) {
 
   var params = {filter: {net_device: this.id}};
+  params = this._copyData(dto, params);
   return objectManagement.sListObjects(params, "/net_device_metrics/", this.client, this.constructor);
-};			
+};
