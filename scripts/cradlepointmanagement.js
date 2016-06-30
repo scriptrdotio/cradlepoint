@@ -3,7 +3,7 @@
 write=nobody
 execute=authenticated 
   **/ 
- var accountManagementModule = require("./admin/accountmanagement".js);
+ var accountManagementModule = require("./admin/accountmanagement.js");
 var routerManagementModule = require("./routermanagement.js");
 var netdevicemanagementModule = require("./netdevicemanagement.js");
 var configurationmanagementModule = require("./configurationmanagement.js");
