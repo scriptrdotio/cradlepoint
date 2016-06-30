@@ -81,7 +81,7 @@ These id/key pairs are used to authenticate and authorize the users who is sendi
 Our Predix connector uses the concept of "Principal" to wrap roles and permissions. 
 Hence before using any of the classes that constitute our connector, it is necessary to create an instance of Principal: 
 ```
-var principalModule = require("../auth/principal"); 
+var principalModule = require("../auth/principal.js"); 
 // Create principal with administrator role 
 var principal = new principalModule.Principal({app:"scriptr", role:"administrator"});
 ```
@@ -93,7 +93,7 @@ in the configuration script (see "Configuration" paragraph)
 The first thing to do is to create an instance of CradlepointManager, which is a factory of other objects (API managers) that wrap specific ECM APIs. The constructor or CradlepointManager expects you to pass it an instance of Principal. 
 ```
 // first, require the "cradlepointmanagement" module 
-var cradlepointManagementModule = require("../cradlepointmanagement"); 
+var cradlepointManagementModule = require("../cradlepointmanagement.js"); 
 // then create an instance of CradlepointManager, passing a Principal 
 var cradlepointManager = new cradlepointManagementModule.CradlepointManager({principal:principal});
 ```

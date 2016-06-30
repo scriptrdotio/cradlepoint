@@ -3,7 +3,7 @@
 write=nobody
 execute=authenticated 
   **/ 
- var config = require("./config");
+ var config = require("./config.js");
 
 /**
  * Define a structure that holds credentials to be used in the different classes

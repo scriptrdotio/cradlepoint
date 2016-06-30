@@ -3,8 +3,8 @@
 write=nobody
 execute=authenticated 
   **/ 
- var baseobjectModule = require("./baseobject");
-var objectManagement = require("./objectmanagement");
+ var baseobjectModule = require("./baseobject.js");
+var objectManagement = require("./objectmanagement.js");
 
 /**
  * Wraps configuration manager data and methods

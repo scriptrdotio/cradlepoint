@@ -3,8 +3,8 @@
 write=nobody
 execute=authenticated 
   **/ 
- var accountModule = require("../admin/account");
-var objectmanagement = require("../objectmanagement");
+ var accountModule = require("../admin/account.js");
+var objectmanagement = require("../objectmanagement.js");
 
 // the root path of the accounts API
 var PATH = "/accounts/";

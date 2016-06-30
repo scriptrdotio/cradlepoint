@@ -3,7 +3,7 @@
 write=nobody
 execute=authenticated 
   **/ 
- var baseobjectModule = require("../baseobject");
+ var baseobjectModule = require("../baseobject.js");
 
 /**
  * Wraps account data and methods

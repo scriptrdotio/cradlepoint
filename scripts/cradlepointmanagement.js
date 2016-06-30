@@ -3,11 +3,11 @@
 write=nobody
 execute=authenticated 
   **/ 
- var accountManagementModule = require("./admin/accountmanagement");
-var routerManagementModule = require("./routermanagement");
-var netdevicemanagementModule = require("./netdevicemanagement");
-var configurationmanagementModule = require("./configurationmanagement");
-var clientModule = require("./client");
+ var accountManagementModule = require("./admin/accountmanagement".js);
+var routerManagementModule = require("./routermanagement.js");
+var netdevicemanagementModule = require("./netdevicemanagement.js");
+var configurationmanagementModule = require("./configurationmanagement.js");
+var clientModule = require("./client.js");
 
 /**
  * Main entry point (factory) to all cradelpoint services

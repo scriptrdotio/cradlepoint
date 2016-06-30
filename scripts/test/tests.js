@@ -3,10 +3,10 @@
 write=nobody
 execute=authenticated 
   **/ 
- var principalModule = require("../auth/principal");
-var cradlepointManagementModule = require("../cradlepointmanagement");
-var accountManagementModule = require("../admin/accountmanagement");
-var clientModule = require("../client");
+ var principalModule = require("../auth/principal.js");
+var cradlepointManagementModule = require("../cradlepointmanagement.js");
+var accountManagementModule = require("../admin/accountmanagement.js");
+var clientModule = require("../client.js");
 
 try {
   

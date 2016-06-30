@@ -3,8 +3,8 @@
 write=nobody
 execute=authenticated 
   **/ 
- var configurationManagerModule = require("./configurationmgr");
-var objectmanagement = require("./objectmanagement");
+ var configurationManagerModule = require("./configurationmgr.js");
+var objectmanagement = require("./objectmanagement.js");
 
 var PATH = "/configuration_managers/";
 

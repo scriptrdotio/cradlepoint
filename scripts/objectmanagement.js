@@ -4,8 +4,8 @@ write=nobody
 execute=authenticated 
   **/ 
 
-var clientModule = require("./client");
-var util = require("./util");
+var clientModule = require("./client.js");
+var util = require("./util.js");
 
 /**
  * Provides shared behavior accross all xxxmanagers

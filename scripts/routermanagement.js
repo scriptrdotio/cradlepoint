@@ -3,8 +3,8 @@
 write=nobody
 execute=authenticated 
   **/ 
- var routerModule = require("./router");
-var objectmanagement = require("./objectmanagement");
+ var routerModule = require("./router.js");
+var objectmanagement = require("./objectmanagement.js");
 
 var PATH = "/routers/";
 

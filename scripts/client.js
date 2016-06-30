@@ -3,7 +3,7 @@
 write=nobody
 execute=authenticated 
   **/ 
- var config = require("./auth/config");
+ var config = require("./auth/config.js");
 var http = require("http");
 
 /**

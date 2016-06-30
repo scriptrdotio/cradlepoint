@@ -3,8 +3,8 @@
 write=nobody
 execute=authenticated 
   **/ 
- var objectmanagement = require("./objectmanagement");
-var netdeviceModule = require("./netdevice");
+ var objectmanagement = require("./objectmanagement.js");
+var netdeviceModule = require("./netdevice.js");
 
 var PATH = "/net_devices/";
 
