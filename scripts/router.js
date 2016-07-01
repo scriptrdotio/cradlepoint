@@ -51,6 +51,27 @@ Router.prototype.update = function(){
 };
 
 /**
+ * Reboot the current router (rebooting might not occur immediately)
+ * @method reboot
+ * @return {Object}
+ * @throws Error
+ */
+Router.prototype.reboot = function(){
+  
+  var updateParameters = {
+    
+    url: "/reboot_activity/",
+    method: "POST",
+    params:  {"router":"/api/v2/routers/" +  this.id + "/"},
+    headers: {
+      "Content-Type": "application/json"
+    }
+  };
+  
+  return this.client.callApi(updateParameters);
+};
+
+/**
  * A Cradlepoint router connects to ECM through the ECM stream server.  ECM tracks communication 
  * between the router and the server using stream samples. This endpoint can be used to calculate total ECM network traffic
  * for the current router. 
