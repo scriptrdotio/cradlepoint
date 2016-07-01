@@ -108,6 +108,8 @@ try {
     /* list routers logs */
     //data.listRouterLogs = router.listLogs({filter:{created_at__gt: "2016-05-21T16:49:57.930033+00:00"}});
  
+    /*reboot */
+    //router.reboot();
  //}
  
   
