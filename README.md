@@ -1,4 +1,4 @@
-# Cadlepoint connector
+# Cradlepoint connector
 
 ## About Cradlepoint ECM
 Cradlepoint's Enterprise Cloud Manager (ECM) is a device management meant to rapidly deploy and dynamically manage networks at geographically distributed locations.
